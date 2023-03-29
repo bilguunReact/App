@@ -56,7 +56,7 @@ export default function Hoyrdahi({ navigation }) {
               source={require("../../minii-anhnii-app/assets/chess.png")}
               style={styles.buuMed}
             ></Image>
-            <Text style={{ color: 'white', fontSize: 16 }}>Мэргэжил</Text>
+            {/* <Text style={{ color: 'white', fontSize: 16 }}>Мэргэжил</Text> */}
             </TouchableOpacity>
           </View>
           <View style={styles.medeh}>
