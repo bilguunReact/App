@@ -1,9 +1,32 @@
 import { StatusBar } from "expo-status-bar"
-import { Button, StyleSheet, Text, View } from "react-native"
+import { Button, SafeAreaView, ScrollView, StyleSheet, Text, View, Pressable } from "react-native"
 import { StackActions } from "@react-navigation/native";
   
   export default function Hoyrdahi({ navigation, greeting }) {
         return (
+        <SafeAreaView>
+            <ScrollView style={styles.helbar} horizontal={true}>
+            <View style={styles.border}>
+                <Pressable ><Text>Гэр бүл</Text></Pressable></View>
+                <View style={styles.border}>
+                <Pressable>
+                <Text style={styles.hor}>Чадвар</Text>
+                </Pressable></View>
+                <View style={styles.border}>
+                <Pressable>
+                <Text style={styles.hor}>Спорт</Text>
+                </Pressable></View>
+                <View style={styles.border}>
+                <Pressable>
+                <Text style={styles.hor}>Хичээл</Text>
+                </Pressable></View>
+                <View style={styles.border}>
+                <Pressable>
+                <Text style={styles.hor}>Ном</Text>
+                </Pressable></View>
+                
+            </ScrollView>
+          <ScrollView>
         <View style={styles.container}>
          <Text>{greeting}</Text>
          <Button 
@@ -20,6 +43,8 @@ import { StackActions } from "@react-navigation/native";
          />
          <StatusBar style="auto"/>
         </View>
+        </ScrollView>
+        </SafeAreaView>
     )
 };
 
@@ -29,5 +54,24 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         alignItems: 'center',
         justifyContent: 'center',
-    }
+    },
+    border: {
+        flexDirection: 'row',
+        borderRadius: 20, 
+        width: 100,
+        height: 40,        
+        backgroundColor: 'white',
+        alignItems:'center', 
+        justifyContent:'center',
+        margin: 7,
+        borderColor: `#696969`,
+        borderWidth: 2,
+        fontWeight: 5,
+    },
+   title: {
+    textAlign: 'center',
+
+   }
+
+    
 })
