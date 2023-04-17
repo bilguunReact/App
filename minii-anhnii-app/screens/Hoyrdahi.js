@@ -1,13 +1,16 @@
 import { StatusBar } from "expo-status-bar"
-import { Button, SafeAreaView, ScrollView, StyleSheet, Text, View, Pressable } from "react-native"
+import { Button, SafeAreaView, ScrollView, StyleSheet, Text, View, Pressable, TouchableOpacity, } from "react-native"
 import { StackActions } from "@react-navigation/native";
   
   export default function Hoyrdahi({ navigation, greeting }) {
         return (
         <SafeAreaView>
             <ScrollView style={styles.helbar} horizontal={true}>
-            <View style={styles.border}>
-                <Pressable ><Text>Гэр бүл</Text></Pressable></View>
+            <TouchableOpacity onPress={() => navigation.popToTop()}>
+                    <View style={styles.border}>
+                        <Text>Гэр бүл</Text>
+                    </View>
+            </TouchableOpacity>
                 <View style={styles.border}>
                 <Pressable>
                 <Text style={styles.hor}>Чадвар</Text>
