@@ -18,7 +18,7 @@ import { StackActions } from "@react-navigation/native";
                 <View style={styles.border}>
                 <Pressable>
                 <Text style={styles.hor}>Спорт</Text>
-                </Pressable></View>
+                </Pressable></View>     
                 <View style={styles.border}>
                 <Pressable>
                 <Text style={styles.hor}>Хичээл</Text>
